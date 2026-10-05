@@ -54,7 +54,7 @@ Este arquivo tem duas partes:
 > ```
 >
 > **2. Texto sobre internação involuntária**
-> Somos uma comunidade terapêutica, e pela Lei 13.840/2019 só fazemos acolhimento **voluntário**. Procure no site qualquer frase que ofereça ou prometa "internação involuntária" ou "compulsória" feita pela clínica e reescreva assim:
+> Internação involuntária só pode ser feita em hospital ou unidade de saúde (Lei 13.840/2019). Procure no site qualquer frase que ofereça ou prometa "internação involuntária" ou "compulsória" e reescreva assim:
 > "Para casos que precisam de internação involuntária, orientamos a família sobre o encaminhamento para atendimento hospitalar."
 > Me mostre a lista do que mudou.
 >
