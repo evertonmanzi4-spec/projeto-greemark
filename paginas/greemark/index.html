@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Greemark Landing Pages</title>
+<meta name="description" content="Landing pages que convertem e campanhas no Google Ads medidas do clique ao contato.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<!-- GOOGLE ADS / GA4: cole aqui a tag do Google (gtag.js) -->
+<style>
+/* Layout: coluna única editorial; o hero mostra um anúncio do Google Ads de verdade, com contagem de caracteres */
+:root {
+  --bg: #f2f4ef;
+  --surface: #ffffff;
+  --ink: #15211a;
+  --muted: #56645b;
+  --line: #d6ddd3;
+  --accent: #0d7a4e;
+  --accent-ink: #ffffff;
+  --mark: #e9b949;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1612; --surface: #17211b; --ink: #e8efe9; --muted: #9db0a3;
+    --line: #2a3a30; --accent: #3fbf86; --accent-ink: #08130d; --mark: #e9b949;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1612; --surface: #17211b; --ink: #e8efe9; --muted: #9db0a3;
+  --line: #2a3a30; --accent: #3fbf86; --accent-ink: #08130d; --mark: #e9b949;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: var(--body); font-size: 1.0625rem; line-height: 1.6;
+}
+.wrap { max-width: 68rem; margin: 0 auto; padding-inline: 1.25rem; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--mark); outline-offset: 3px; }
+
+header.top { padding-block: 1.25rem; }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.logo { font-family: var(--display); font-weight: 800; font-size: 1.35rem; letter-spacing: -0.02em; text-decoration: none; }
+.logo span { color: var(--accent); }
+.top-cta { font-weight: 600; font-size: 0.95rem; text-decoration: none; border-bottom: 2px solid var(--accent); }
+
+.hero { padding-block: 2.5rem 4rem; }
+.hero .wrap { display: grid; grid-template-columns: 1.15fr 1fr; gap: 3rem; align-items: center; }
+.hero .wrap > * { min-width: 0; }
+.eyebrow { font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0 0 1rem; }
+h1 {
+  font-family: var(--display); font-weight: 800; letter-spacing: -0.035em;
+  font-size: clamp(2.4rem, 6vw, 4.4rem); line-height: 1.02; margin: 0 0 1.25rem; text-wrap: balance;
+}
+h1 mark { background: linear-gradient(transparent 62%, var(--mark) 62%); color: inherit; padding: 0 0.1em; }
+.lead { font-size: 1.2rem; color: var(--muted); max-width: 34rem; margin: 0 0 2rem; }
+.btn {
+  display: inline-flex; align-items: center; gap: 0.6rem; background: var(--accent); color: var(--accent-ink);
+  font-weight: 600; font-size: 1.05rem; padding: 0.95rem 1.5rem; border-radius: 999px; text-decoration: none;
+  transition: transform .15s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; }
+.cta-row small { color: var(--muted); font-size: 0.9rem; }
+
+/* Anúncio simulado */
+.ad { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 1.4rem; box-shadow: 0 18px 40px -24px rgba(13, 50, 30, .35); }
+.ad-meta { display: flex; align-items: center; gap: .5rem; font-size: .85rem; color: var(--muted); }
+.ad-meta b { color: var(--ink); font-weight: 600; }
+.ad-title { font-size: 1.3rem; line-height: 1.3; color: var(--accent); margin: .5rem 0 .35rem; font-weight: 500; }
+.ad-desc { font-size: .95rem; color: var(--muted); margin: 0; }
+.specs { margin: 1.1rem 0 0; padding: 1rem 0 0; border-top: 1px dashed var(--line); display: grid; gap: .45rem; font-family: var(--mono); font-size: .78rem; }
+.specs div { display: flex; justify-content: space-between; gap: 1rem; }
+.specs dt { color: var(--muted); }
+.specs dd { margin: 0; font-variant-numeric: tabular-nums; }
+.specs .ok::after { content: " ✓"; color: var(--accent); }
+
+section { padding-block: 4rem; border-top: 1px solid var(--line); }
+h2 { font-family: var(--display); font-weight: 700; letter-spacing: -0.025em; font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.1; margin: 0 0 2.5rem; max-width: 40rem; text-wrap: balance; }
+.services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; }
+.services > div { min-width: 0; }
+.services h3 { font-family: var(--display); font-size: 1.3rem; margin: 0 0 .5rem; }
+.services p { margin: 0; color: var(--muted); }
+.tag { font-family: var(--mono); font-size: .75rem; color: var(--accent); letter-spacing: .06em; text-transform: uppercase; display: block; margin-bottom: .6rem; }
+
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; counter-reset: s; }
+.steps li { counter-increment: s; padding-top: 1rem; border-top: 3px solid var(--ink); min-width: 0; }
+.steps li::before { content: "Etapa " counter(s); font-family: var(--mono); font-size: .78rem; color: var(--muted); display: block; margin-bottom: .4rem; }
+.steps b { display: block; font-family: var(--display); font-size: 1.15rem; margin-bottom: .3rem; }
+.steps span { color: var(--muted); font-size: .97rem; }
+
+.final { background: var(--ink); color: var(--bg); border-top: 0; }
+.final h2 { color: var(--bg); }
+.final p { color: var(--bg); opacity: .8; max-width: 36rem; margin: 0 0 2rem; }
+.final .num { font-family: var(--mono); font-size: .9rem; opacity: .75; }
+footer { padding-block: 2rem; font-size: .85rem; color: var(--muted); }
+
+@media (max-width: 860px) {
+  .hero .wrap, .services { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) { .steps { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#">Gree<span>mark</span></a>
+    <a class="top-cta" href="https://wa.me/5500000000000" target="_blank" rel="noopener">Falar no WhatsApp</a>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Landing pages + Google Ads</p>
+        <h1>Seu anúncio traz o clique. <mark>A página fecha o cliente.</mark></h1>
+        <p class="lead">Criamos a landing page e cuidamos da campanha no Google Ads, com tudo medido: você sabe quantos contatos cada real investido trouxe.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Quero%20uma%20landing%20page" target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
+          <small>Resposta no mesmo dia útil</small>
+        </div>
+      </div>
+
+      <figure class="ad" aria-label="Exemplo de anúncio no Google">
+        <div class="ad-meta"><b>Patrocinado</b> · greemark.com.br</div>
+        <p class="ad-title">Landing Page que Vende | Pronta e Medida</p>
+        <p class="ad-desc">Página rápida no celular, botão de WhatsApp e conversões configuradas no Google Ads.</p>
+        <dl class="specs">
+          <div><dt>Título 1</dt><dd class="ok">22/30</dd></div>
+          <div><dt>Título 2</dt><dd class="ok">15/30</dd></div>
+          <div><dt>Descrição</dt><dd class="ok">84/90</dd></div>
+          <div><dt>Conversão</dt><dd class="ok">clique no WhatsApp</dd></div>
+        </dl>
+      </figure>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>Tudo o que o anúncio precisa para dar retorno</h2>
+      <div class="services">
+        <div>
+          <span class="tag">Página</span>
+          <h3>Landing page sob medida</h3>
+          <p>Uma página por oferta, com texto direto, carregamento rápido no celular e um único objetivo: o contato.</p>
+        </div>
+        <div>
+          <span class="tag">Tráfego</span>
+          <h3>Campanha no Google Ads</h3>
+          <p>Palavras-chave de quem já procura o seu serviço, anúncios dentro dos limites do Google e palavras negativas para não pagar clique errado.</p>
+        </div>
+        <div>
+          <span class="tag">Medição</span>
+          <h3>Conversões configuradas</h3>
+          <p>Tag do Google e evento no botão de WhatsApp, para o Google Ads saber o que é um resultado e otimizar por ele.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Como funciona</h2>
+      <ol class="steps">
+        <li><b>Conversa</b><span>Você conta o que vende, para quem e em qual região.</span></li>
+        <li><b>Página</b><span>Montamos a primeira versão e você aprova pelo celular.</span></li>
+        <li><b>Campanha</b><span>Subimos o Google Ads com a conversão já medindo.</span></li>
+        <li><b>Ajustes</b><span>Acompanhamos os números e melhoramos página e anúncios.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>Vamos colocar sua oferta no ar?</h2>
+      <p>Chame no WhatsApp e conte o que você vende. A gente responde com uma proposta de página e campanha.</p>
+      <div class="cta-row">
+        <a class="btn" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Quero%20uma%20landing%20page" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <span class="num">(00) 00000-0000</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Greemark · Landing pages e Google Ads</div>
+</footer>
+
+</body>
+</html>
