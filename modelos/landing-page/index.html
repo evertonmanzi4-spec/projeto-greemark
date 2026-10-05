@@ -8,7 +8,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
-<!-- GOOGLE ADS / GA4: cole aqui a tag do Google (gtag.js) -->
+<!-- GOOGLE ADS: troque AW-XXXXXXXXX pelo ID da conta do cliente (Google Ads > Metas > Conversões) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-XXXXXXXXX');
+</script>
 <style>
 /* Layout: coluna única editorial; o hero mostra um anúncio do Google Ads de verdade, com contagem de caracteres */
 :root {
@@ -197,5 +204,17 @@ footer { padding-block: 2rem; font-size: .85rem; color: var(--muted); }
   <div class="wrap">Greemark · Landing pages e Google Ads</div>
 </footer>
 
+<script>
+/* Conversões do Google Ads: troque os rótulos pelos da conta do cliente */
+var CONVERSAO_WHATSAPP = 'AW-XXXXXXXXX/ROTULO_WHATSAPP';
+var CONVERSAO_LIGACAO  = 'AW-XXXXXXXXX/ROTULO_LIGACAO';
+document.addEventListener('click', function (e) {
+  var a = e.target.closest('a[href]');
+  if (!a || typeof gtag !== 'function') return;
+  var href = a.getAttribute('href');
+  if (/wa\.me|api\.whatsapp\.com/.test(href)) gtag('event', 'conversion', { send_to: CONVERSAO_WHATSAPP });
+  else if (href.indexOf('tel:') === 0) gtag('event', 'conversion', { send_to: CONVERSAO_LIGACAO });
+});
+</script>
 </body>
 </html>
