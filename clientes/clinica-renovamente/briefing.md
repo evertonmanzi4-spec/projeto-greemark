@@ -17,3 +17,11 @@
 - Forma de pagamento do Google Ads (pré-pago?), que explicaria os dias sem gasto
 - Quem edita o site
 - Região de onde vêm as famílias
+
+## Respostas de 05/10/2026
+- Google Ads pago por Pix, quando há dinheiro; orçamento R$ 100/dia
+- Valor por paciente: mínimo ~R$ 900, máximo ~R$ 4.000 (pode subir conforme o caso)
+- Pedidos de involuntária: encaminhados a hospital, sem parceiro fixo
+- O próprio Everton edita o site (com outro chat do Claude); instruções em PARA-O-CLAUDE-DO-SITE.md
+- Anúncio para o Brasil todo; maioria dos contatos vem do Sul e Sudeste
+- Atendimento anota a origem; todos vêm do site
