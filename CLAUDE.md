@@ -26,4 +26,4 @@ Responda sempre em português simples, com passos curtos.
   (campanha, palavras-chave, anúncios, orçamento diário) e só executar após o "ok" do Everton.
 - Criar campanhas novas sempre **pausadas**; ativar só com aprovação.
 - Nunca apagar campanhas; no máximo pausar.
-- Clínica Renovamente (conta 948-944-3080): NÃO alterar nada na conta até o Everton autorizar de novo.
+- Clínica Renovamente: tudo no repositório `renovamente` (regras no CLAUDE.md de lá). NÃO alterar a conta do Google Ads sem autorização.
