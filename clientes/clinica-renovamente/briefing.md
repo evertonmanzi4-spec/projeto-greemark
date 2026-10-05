@@ -25,3 +25,9 @@
 - O próprio Everton edita o site (com outro chat do Claude); instruções em PARA-O-CLAUDE-DO-SITE.md
 - Anúncio para o Brasil todo; maioria dos contatos vem do Sul e Sudeste
 - Atendimento anota a origem; todos vêm do site
+
+## Modelo de negócio (informado em 05/10/2026)
+- Além da própria clínica, indicam pacientes para outras clínicas quando não ficam na Renovamente.
+- Na indicação recebem metade da 1ª parcela, ~R$ 400–500, uma única vez. Sem controle depois.
+- A maior parte dos pacientes vai para outras clínicas.
+- ATENÇÃO: a conta "R$ 495 por internação se paga" NÃO vale para indicações. Revisar antes de aumentar verba.
