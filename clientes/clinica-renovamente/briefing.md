@@ -42,3 +42,8 @@
 - Recebem o valor integral da 1ª parcela do paciente, pago em duas metades (mês 1 e mês 2).
 - Estimativa: 1ª parcela ~R$ 800–1.000 (metade ~R$ 400–500); pode chegar a ~R$ 4.000.
 - Conta aproximada: ~R$ 495 de anúncio por internação x ~R$ 900 de receita.
+
+## 05/10/2026
+- Localização: São Bernardo do Campo (SP).
+- O Everton pediu para NÃO mexer na conta do Google Ads da Renovamente por enquanto.
+  Só leitura/análise até nova autorização.
