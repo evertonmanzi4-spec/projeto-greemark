@@ -1,8 +1,9 @@
 # Briefing — Projeto Renovamente (Everton)
 
-> CORREÇÃO 05/10/2026: o Everton NÃO tem clínica própria. O Projeto Renovamente capta os contatos
-> (site + Google Ads) e encaminha os pacientes para clínicas parceiras. Os dados abaixo sobre
-> "comunidade terapêutica", equipe e bombeiros precisam ser reconfirmados: podem ser das clínicas parceiras.
+> MODELO (confirmado 05/10/2026): o Everton REPRESENTA a Clínica Renovamente (do cunhado), uma
+> comunidade terapêutica regularizada; a conta do Google Ads e a documentação são dela.
+> Quando a Renovamente não tem vaga, ajudam a família a encaminhar para outras clínicas.
+> A maior parte dos pacientes acaba indo para outras clínicas (falta de vaga).
 
 - Site: www.projetorenovamente.com.br
 - Tipo: comunidade terapêutica, regularizada (documentação, bombeiros)
@@ -37,7 +38,7 @@
 - ATENÇÃO: a conta "R$ 495 por internação se paga" NÃO vale para indicações. Revisar antes de aumentar verba.
 
 ## Remuneração (corrigido em 05/10/2026)
-- Nenhuma clínica é própria; todos os pacientes vão para clínicas parceiras.
+- Representam só a Renovamente; outras clínicas recebem quando não há vaga.
 - Recebem o valor integral da 1ª parcela do paciente, pago em duas metades (mês 1 e mês 2).
 - Estimativa: 1ª parcela ~R$ 800–1.000 (metade ~R$ 400–500); pode chegar a ~R$ 4.000.
 - Conta aproximada: ~R$ 495 de anúncio por internação x ~R$ 900 de receita.
